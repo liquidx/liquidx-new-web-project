@@ -1,0 +1,17 @@
+@import "../node_modules/normalize/normalize.css";
+
+body {
+  background: #eee;
+  margin: 20% 20%;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+h1#title {
+  font-family: 'Bungee', sans-serif;
+  margin-bottom: 5px;
+}
+.talks, .projects, .content {
+  display: none;
+}
+.fold {
+  height: 100vh;
+}
