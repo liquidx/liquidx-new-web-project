@@ -9,6 +9,7 @@
     "start-webpack": "webpack-dev-server --open",
     "deploy-gcloud": "gcloud app deploy --promote -q --project liquidx-new-web-project",
     "deploy-firebase": "firebase deploy",
+    "deploy-now": "now",
     "logs-gcloud": "gcloud app logs tail -s default --project liquidx-new-web-project",
     "deploy-gcs": "gsutil -m cp -r data-images gs://liquidx-new-web-project.a.appspot.com/"
   },
