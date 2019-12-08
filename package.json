@@ -6,7 +6,7 @@
     "build": "npx webpack",
     "watch": "npx webpack --watch",
     "start": "node server.js",
-    "start-webpack": "webpack-dev-server --open",
+    "start-webpack": "node server.webpack.js",
     "deploy-gcloud": "gcloud app deploy --promote -q --project liquidx-new-web-project",
     "deploy-firebase": "firebase deploy",
     "deploy-now": "now",
