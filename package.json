@@ -4,12 +4,13 @@
   "main": "server.js",
   "engines": { "node": "10.x" },
   "scripts": {
-    "build": "npx webpack",
-    "watch": "npx webpack --watch",
+    "build": "npx webpack --config webpack.dev.js",
+    "build-prod": "npx webpack --config webpack.prod.js",
+    "watch": "npx webpack --watch --config webpack.dev.js",
     "start": "node server.js",
     "start-webpack": "node server.webpack.js",
-    "deploy-gcloud": "gcloud app deploy --promote -q --project liquidx-new-web-project",
-    "deploy-firebase": "firebase deploy",
+    "deploy-gcloud": "npx webpack --config webpack.prod.js && gcloud app deploy --promote -q --project liquidx-new-web-project",
+    "deploy-firebase": "npx webpack --config webpack.prod.js && firebase deploy",
     "deploy-now": "now",
     "logs-gcloud": "gcloud app logs tail -s default --project liquidx-new-web-project",
     "deploy-gcs": "gsutil -m cp -r data-images gs://liquidx-new-web-project.a.appspot.com/"
