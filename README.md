@@ -30,6 +30,11 @@ gcloud auth login
 npm run deploy-gcloud
 ```
 
+### Google Cloud Functions
+
+Follow [https://cloud.google.com/functions/docs/quickstart-nodejs](). Project is inside `gcloud-functions`.
+
+
 ## Zeit Now
 
 ```
