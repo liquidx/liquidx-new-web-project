@@ -1,0 +1,14 @@
+{
+  "name": "liquidx-new-web-project-gcloud-functions",
+  "scripts": {
+    "deploy": "gcloud functions deploy helloWorld --runtime nodejs10 --trigger-http --project liquidx-new-web-project"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "escape-html": "^1.0.3"
+  },
+  "devDependencies": {},
+  "private": true
+}
