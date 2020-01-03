@@ -15,7 +15,7 @@
     "deploy-firebase": "npx webpack --config webpack.prod.js && firebase deploy",
     "deploy-now": "now",
     "logs-gcloud": "gcloud app logs tail -s default --project liquidx-new-web-project",
-    "deploy-gcs": "gsutil -m cp -r data-images gs://liquidx-new-web-project.a.appspot.com/"
+    "deploy-gcs": "gsutil -m cp -r gcloud-storage gs://liquidx-new-web-project.a.appspot.com/"
   },
   "dependencies": {
     "@babel/core": "^7.6.0",
