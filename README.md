@@ -10,6 +10,8 @@ npm run --help
 Create the project on firebase.console.com
 
 ```
+npm install -g firebase-tools
+
 firebase logout
 firebase login 
 
